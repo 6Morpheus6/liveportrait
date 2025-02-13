@@ -29,8 +29,17 @@ module.exports = {
         path: "app",                // Edit this to customize the path to start the shell from
         message: [
           "pip install gradio devicetorch",
-          "pip install -r {{platform==='darwin' ? 'requirements_macOS.txt' : 'requirements.txt'}}"
+          "pip install -r {{platform==='darwin' ? 'requirements_macOS.txt' : 'requirements.txt'}}",
         ]
+      }
+    },
+    {
+      when: "{{gpu === 'nvidia'}}",
+      method: "shell.run",
+      params: {
+        venv: "env",
+        path: "app",
+        message: "pip install onnxruntime==1.19.2"
       }
     },
     {
