@@ -1,6 +1,6 @@
 const path = require('path')
 module.exports = {
-  version: "2.0",
+  version: "3.7",
   title: "LivePortrait",
   description: "Bring portraits to life! https://github.com/KwaiVGI/LivePortrait",
   icon: "icon.png",
@@ -102,8 +102,9 @@ module.exports = {
             href: "install.js",
           }, {
             icon: "fa-regular fa-circle-xmark",
-            text: "Reset",
+            text: "<div><strong>Reset</strong><div>Revert to pre-install state</div></div>",
             href: "reset.js",
+            confirm: "Are you sure you wish to reset the app?"
           }]
         }
       }
