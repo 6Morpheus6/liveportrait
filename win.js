@@ -3,8 +3,8 @@ module.exports = {
     method: "shell.run",
     params: {
       message: [
-        "conda install -y -c conda-forge 7zip huggingface_hub",
-        "huggingface-cli download cleardusk/LivePortrait-Windows LivePortrait-Windows-v20240829.zip --local-dir {{cwd}}",
+        "conda install -y -c conda-forge 7zip==23.01",
+        "hf download cleardusk/LivePortrait-Windows LivePortrait-Windows-v20240829.zip --local-dir {{cwd}}",
       ]
     }
   }, {
