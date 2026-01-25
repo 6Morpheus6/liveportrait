@@ -23,7 +23,7 @@ module.exports = {
       params: {
         path: "app",
         message: [
-          "conda deactivate && call LivePortrait_env/Scripts/activate.bat && uv pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 --index-url https://download.pytorch.org/whl/cu128 --force-reinstall --no-deps && uv pip install -U onnxruntime-gpu"
+          "conda deactivate && call LivePortrait_env/Scripts/activate.bat && uv pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 --index-url https://download.pytorch.org/whl/cu128 --force-reinstall --no-deps && uv pip install -U onnxruntime-gpu && uv pip install ../wheel/multiscaledeformableattention-1.0-cp39-cp39-win_amd64.whl"
         ]
       }
     },
